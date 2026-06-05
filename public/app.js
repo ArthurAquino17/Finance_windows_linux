@@ -182,8 +182,31 @@ function previousMonthISO(month) {
 }
 
 function moneyToFloat(value) {
-  const raw = String(value || "").trim().replace(/\./g, "").replace(",", ".");
-  return Number(raw);
+  const input = String(value || "")
+    .trim()
+    .replace(/\s/g, "")
+    .replace(/^R\$\s?/, "");
+
+  if (!input) return Number.NaN;
+
+  const lastComma = input.lastIndexOf(",");
+  const lastDot = input.lastIndexOf(".");
+  const decimalSeparator = lastComma > lastDot ? "," : ".";
+
+  let normalized = input;
+  if (lastComma >= 0 && lastDot >= 0) {
+    const thousandSeparator = decimalSeparator === "," ? "." : ",";
+    normalized = normalized.replace(new RegExp(`\\${thousandSeparator}`, "g"), "").replace(decimalSeparator, ".");
+  } else if (lastComma >= 0) {
+    normalized = normalized.replace(/\./g, "").replace(",", ".");
+  } else if (lastDot >= 0) {
+    const decimalDigits = normalized.length - lastDot - 1;
+    if (decimalDigits === 3 && /^\d{1,3}(\.\d{3})+$/.test(normalized)) {
+      normalized = normalized.replace(/\./g, "");
+    }
+  }
+
+  return Number(normalized);
 }
 
 function floatToMoney(value) {

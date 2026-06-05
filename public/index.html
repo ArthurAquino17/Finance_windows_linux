@@ -125,7 +125,7 @@
               </label>
               <label>
                 <span>Valor</span>
-                <input type="number" id="txAmount" step="0.01" min="0" placeholder="0,00" required />
+                <input type="text" id="txAmount" inputmode="decimal" placeholder="0,00" required />
               </label>
               <label>
                 <span>Tipo</span>
@@ -177,11 +177,11 @@
               </label>
               <label>
                 <span>Valor mínimo</span>
-                <input type="number" id="filterMinAmount" min="0" step="0.01" placeholder="0,00" />
+                <input type="text" id="filterMinAmount" inputmode="decimal" placeholder="0,00" />
               </label>
               <label>
                 <span>Valor máximo</span>
-                <input type="number" id="filterMaxAmount" min="0" step="0.01" placeholder="0,00" />
+                <input type="text" id="filterMaxAmount" inputmode="decimal" placeholder="0,00" />
               </label>
               <button id="applyFiltersBtn" class="secondary">Aplicar</button>
             </div>
@@ -274,11 +274,11 @@
               </label>
               <label>
                 <span>Valor alvo</span>
-                <input type="number" id="goalTarget" step="0.01" min="0" placeholder="0,00" required />
+                <input type="text" id="goalTarget" inputmode="decimal" placeholder="0,00" required />
               </label>
               <label>
                 <span>Valor atual</span>
-                <input type="number" id="goalCurrent" step="0.01" min="0" placeholder="0,00" />
+                <input type="text" id="goalCurrent" inputmode="decimal" placeholder="0,00" />
               </label>
               <label>
                 <span>Tipo</span>
@@ -309,7 +309,7 @@
               </label>
               <label>
                 <span>Valor total</span>
-                <input type="number" id="installmentTotal" step="0.01" min="0" placeholder="0,00" required />
+                <input type="text" id="installmentTotal" inputmode="decimal" placeholder="0,00" required />
               </label>
               <label>
                 <span>Parcelas</span>
@@ -338,7 +338,7 @@
               </label>
               <label>
                 <span>Saldo inicial</span>
-                <input type="number" id="accountInitial" step="0.01" placeholder="0,00" />
+                <input type="text" id="accountInitial" inputmode="decimal" placeholder="0,00" />
               </label>
               <button class="primary full" type="submit">Adicionar conta</button>
             </form>
@@ -377,7 +377,7 @@
               </label>
               <label>
                 <span>Limite mensal</span>
-                <input type="number" id="budgetLimit" step="0.01" min="0" placeholder="0,00" required />
+                <input type="text" id="budgetLimit" inputmode="decimal" placeholder="0,00" required />
               </label>
               <button class="primary full" type="submit">Salvar limite</button>
             </form>
@@ -399,7 +399,7 @@
               </label>
               <label>
                 <span>Valor</span>
-                <input type="number" id="recurringAmount" step="0.01" min="0" placeholder="0,00" required />
+                <input type="text" id="recurringAmount" inputmode="decimal" placeholder="0,00" required />
               </label>
               <label>
                 <span>Tipo</span>

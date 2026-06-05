@@ -2,10 +2,10 @@
 
 
 a = Analysis(
-    ['Z:\\home\\arthur\\Documents\\fina-robusto\\server.py'],
+    ['Z:\\home\\arthur\\Documentos\\fina-robusto\\server.py'],
     pathex=[],
     binaries=[],
-    datas=[('Z:\\home\\arthur\\Documents\\fina-robusto\\public\\index.html', 'public'), ('Z:\\home\\arthur\\Documents\\fina-robusto\\public\\styles.css', 'public'), ('Z:\\home\\arthur\\Documents\\fina-robusto\\public\\app.js', 'public'), ('Z:\\home\\arthur\\Documents\\fina-robusto\\public\\manifest.json', 'public'), ('Z:\\home\\arthur\\Documents\\fina-robusto\\public\\sw.js', 'public'), ('Z:\\home\\arthur\\Documents\\fina-robusto\\public\\icon.svg', 'public'), ('Z:\\home\\arthur\\Documents\\fina-robusto\\public\\favicon.ico', 'public')],
+    datas=[('Z:\\home\\arthur\\Documentos\\fina-robusto\\public\\index.html', 'public'), ('Z:\\home\\arthur\\Documentos\\fina-robusto\\public\\styles.css', 'public'), ('Z:\\home\\arthur\\Documentos\\fina-robusto\\public\\app.js', 'public'), ('Z:\\home\\arthur\\Documentos\\fina-robusto\\public\\manifest.json', 'public'), ('Z:\\home\\arthur\\Documentos\\fina-robusto\\public\\sw.js', 'public'), ('Z:\\home\\arthur\\Documentos\\fina-robusto\\public\\icon.svg', 'public'), ('Z:\\home\\arthur\\Documentos\\fina-robusto\\public\\favicon.ico', 'public')],
     hiddenimports=[],
     hookspath=[],
     hooksconfig={},
@@ -35,5 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['Z:\\home\\arthur\\Documents\\fina-robusto\\public\\favicon.ico'],
+    icon=['Z:\\home\\arthur\\Documentos\\fina-robusto\\public\\favicon.ico'],
 )
